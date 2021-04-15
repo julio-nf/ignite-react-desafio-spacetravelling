@@ -1,1 +1,50 @@
-// TODO
+.postContainer {
+  a {
+    display: block;
+
+    & + a {
+      margin-top: 3rem;
+    }
+
+    strong {
+      font-size: 1.75rem;
+      font-weight: bold;
+      color: var(--gray-100);
+    }
+
+    p {
+      font-size: 1.125rem;
+      color: var(--gray-200);
+
+      margin: 0.5rem 0 1.5rem;
+    }
+
+    article {
+      display: flex;
+      align-items: center;
+
+      time,
+      span {
+        color: var(--gray-400);
+        margin-right: 1.5rem;
+      }
+
+      .icon {
+        color: var(--gray-400);
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  button {
+    display: block;
+    margin-top: 4rem;
+    border: 0;
+    padding: 0;
+    background: transparent;
+
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--highlight);
+  }
+}
