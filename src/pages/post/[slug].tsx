@@ -80,12 +80,13 @@ export default function Post({
 
       <Header />
 
-      <img
-        className={styles.bannerImage}
-        src={post.data.banner.url}
-        alt={post.data.title}
-      />
       <main className={commonStyles.container}>
+        <img
+          className={styles.bannerImage}
+          src={post.data.banner.url}
+          alt={post.data.title}
+        />
+
         <article className={styles.postContainer}>
           <header>
             <h1>{post.data.title}</h1>
